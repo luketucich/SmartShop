@@ -1,0 +1,8 @@
+//
+//  Constants.swift
+//  client
+//
+//  Created by Luke on 10/16/25.
+//
+
+import Foundation
