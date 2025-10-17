@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct ErrorResponse: Codable {
-    let message: String?
-}
-
 enum NetworkError: Error {
     case badRequest
     case decodingError(Error)
