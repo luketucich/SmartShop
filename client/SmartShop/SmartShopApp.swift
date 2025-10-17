@@ -1,14 +1,14 @@
 //
-//  clientApp.swift
-//  client
+//  SmartShopApp.swift
+//  SmartShop
 //
-//  Created by Luke on 10/12/25.
+//  Created by Luke on 10/16/25.
 //
 
 import SwiftUI
 
 @main
-struct clientApp: App {
+struct SmartShopApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
