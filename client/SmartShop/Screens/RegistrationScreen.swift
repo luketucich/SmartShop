@@ -82,7 +82,7 @@ struct RegistrationScreen: View {
                 .disabled(!isFormValid)
                 .cornerRadius(10)
                 .frame(maxWidth: 300)
-        }.padding(.horizontal, 50)
+        }.padding(.horizontal, 50 )
     }
 }
 
