@@ -8,6 +8,12 @@ const registerValidator = [
   body("password", "Password cannot be empty").not().isEmpty(),
 ];
 
+const loginValidator = [
+  body("username", "Username cannot be empty").not().isEmpty(),
+  body("password", "Password cannot be empty").not().isEmpty(),
+];
+
 router.post("/register", registerValidator, authController.register);
+router.post("/login", loginValidator, authController.login);
 
 module.exports = router;

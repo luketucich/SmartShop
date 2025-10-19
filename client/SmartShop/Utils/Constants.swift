@@ -15,5 +15,12 @@ struct Constants {
             }
             return url
         }()
+        
+        static let login: URL = {
+            guard let url = URL(string: "http://localhost:8080/api/auth/login") else {
+                fatalError("Invalid login URL")
+            }
+            return url
+        }()
     }
 }

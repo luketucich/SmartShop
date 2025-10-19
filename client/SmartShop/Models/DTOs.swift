@@ -12,6 +12,14 @@ struct RegisterResponse: Codable {
     let success: Bool
 }
 
+struct LoginResponse: Codable {
+    let message: String?
+    let success: Bool
+    let token: String?
+    let username: String?
+    let userId: Int?
+}
+
 struct ErrorResponse: Codable {
     let message: String?
 }
