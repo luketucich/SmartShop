@@ -91,6 +91,9 @@ struct LoginScreen: View {
                 .cornerRadius(10)
                 .frame(maxWidth: 300)
         }.padding(.horizontal, 50 )
+        
+            .navigationDestination(item: $userId, destination: {_ in Text("Home Screen")
+            })
     }
 }
 
