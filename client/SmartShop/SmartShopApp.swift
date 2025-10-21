@@ -22,7 +22,7 @@ struct SmartShopApp: App {
                         ProgressView("Loading...")
                     } else {
                         if TokenValidator.validate(token: token){
-                            Text("HomeScreen")
+                            HomeScreen()
                         } else {
                             LoginScreen()
                         }

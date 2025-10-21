@@ -90,10 +90,17 @@ struct LoginScreen: View {
                 .disabled(!isFormValid)
                 .cornerRadius(10)
                 .frame(maxWidth: 300)
+            
+            // Add "or sign up" button
+            NavigationLink {
+                RegistrationScreen()
+            } label: {
+                Text("Not a member? Click here to Sign Up")
+                    .font(.subheadline)
+                    .foregroundColor(.blue)
+                    .padding(.top, 10)
+            }
         }.padding(.horizontal, 50 )
-        
-            .navigationDestination(item: $userId, destination: {_ in Text("Home Screen")
-            })
     }
 }
 
