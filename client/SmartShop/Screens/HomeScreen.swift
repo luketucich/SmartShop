@@ -39,11 +39,11 @@ extension AppScreen {
         case .home:
             Text("Home Screen")
         case .myProducts:
-            Text("My Products")
+            Text("My Products").requiresAuthentication()
         case .cart:
-            Text("Cart")
+            Text("Cart").requiresAuthentication()
         case .profile:
-            Text("Profile")
+            ProfileScreen().requiresAuthentication()
         }
     }
 }
