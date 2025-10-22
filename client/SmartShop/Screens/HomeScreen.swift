@@ -53,9 +53,10 @@ struct HomeScreen: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            ForEach(AppScreen.allCases){
-                screen in
-                screen.destination
+            ForEach(AppScreen.allCases){ screen in
+                NavigationStack {
+                    screen.destination
+                }
                     .tag(screen as AppScreen?)
                     .tabItem {screen.label}
             }
